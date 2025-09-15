@@ -22,8 +22,7 @@ public class Usuario {
     @Column(name = "email", length = 45)
     private String email;
 
-    @Column(name = "edad")
-    private Integer edad;
+
 
     @Column(name = "contrasena", length = 45)
     private String contrasena;
@@ -39,7 +38,7 @@ public class Usuario {
     public Usuario(String nombre, String email, Integer edad, String contrasena, Rol rol) {
         this.nombre = nombre;
         this.email = email;
-        this.edad = edad;
+
         this.contrasena = contrasena;
         this.rol = rol;
     }
@@ -76,13 +75,7 @@ public class Usuario {
         this.email = email;
     }
 
-    public Integer getEdad() {
-        return edad;
-    }
 
-    public void setEdad(Integer edad) {
-        this.edad = edad;
-    }
 
     public String getContrasena() {
         return contrasena;
